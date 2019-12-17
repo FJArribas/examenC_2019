@@ -12,21 +12,21 @@ def poblar():
 	c2 = addCamion('camion2')
 	c3 = addCamion('camion3')
 
-	for medico in Medico.objects.all():
-		print ("MEDICO {0}".format(str(medico)))
+	print ("Añadidos camiones")	
 
 	o1 = addObjeto('objeto1')
 	o2 = addObjeto('objeto2')
 	o3 = addObjeto('objeto3')
 	o4 = addObjeto('objeto4')
 
+	print ("Añadidos objetos")	
+
 	r1 = addRuta(c1, o1)
 	r2 = addRuta(c2, o2)
 	r3 = addRuta(c2, o3)
 	r4 = addRuta(c2, o4)
 
-	for receta in Receta.objects.all():
-		print ("RECETA {0}".format(str(receta)))
+	print ("Añadidas rutas")
 
 def addCamion(nombreC):
 	c = camion(nombreC=nombreC)

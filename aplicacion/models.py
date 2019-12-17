@@ -34,4 +34,4 @@ class ruta(models.Model):
     objeto = models.ForeignKey(objeto,on_delete=models.CASCADE)
 
     def save(self, *args, **kwargs):
-        super(Receta, self).save(*args, **kwargs)
+        super(ruta, self).save(*args, **kwargs)
